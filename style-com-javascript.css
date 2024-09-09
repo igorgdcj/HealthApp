@@ -1,0 +1,198 @@
+:root {
+  font-size: 16px;
+  --white: #3b3b3b;
+  --backgroud: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--backgroud);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+
+/*HEADER*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--backgroud);
+  height: 4.6875rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--backgroud);
+    text-align: left;
+    width: 70%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    border-right: #909090 solid 1px;
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
+
+.header_search {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 35px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border: 1px solid #909090;
+}
+
+.header_search img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.header_search input {
+  background: transparent;
+  border: none;
+  padding: 0px 100px 0px 12px;
+  color: #909090;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: none;
+}
+
+
+
+
+/*BODY*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  width: 30%;
+}
+
+.main-container {
+  max-width: 80vw;
+  height: 100vh;
+  margin-left: 320px;
+  margin-right: 56px;
+}
+
+
+
+
+
+
+
+
+
+
+/*RODAPE*/
+
+.menu-rodape {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Define a altura do rodapé */
+  border-top: 1px solid #909090;
+}
+
+.menu-rodape a:hover{
+  transition: all 0.5s;
+  width: 30;
+  height: 30;
+}
