@@ -31,27 +31,27 @@
       <a href="index.html" class="logo">Health App</a>
       <a href="usuario.html"><img class="" src="/img/perfil.png" alt="" width="25px" height="25px"></a>
     </header>
-
-    <form method="POST" action="/create" th:object="${reminder}">
-        <input type="hidden" th:value="${reminder.id}" name="id" />
-        <div class="mb-3">
-          <label class="form-label">Nome do medicamento
-          <input type="text" class="form-control" name="medicationName" th:value="${reminder.medicationName}" required>
-          </label>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Data do lembrete
-          <input type="date" class="form-control" name="date" th:value="${{reminder.date}}" required>
-          </label>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Horário do lembrete
-          <input type="time" class="form-control" name="time" th:value="${{reminder.time}}" required>
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Adicionar</button>
-      </form>
-
+    <div class="content">
+        <form method="POST" action="/create" th:object="${reminder}">
+            <input type="hidden" th:value="${reminder.id}" name="id" />
+            <div class="mb-3">
+            <label class="form-label">
+            <input type="text" placeholder="Nome do medicamento" class="form-control inputs required" name="medicationName" th:value="${reminder.medicationName}" required>
+            </label>
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Data do lembrete: 
+            <input type="date" class="form-control" name="date" th:value="${{reminder.date}}" required>
+            </label>
+            </div>
+            <div class="mb-3">
+            <label class="form-label">Horário do lembrete: 
+            <input type="time" class="form-control" name="time" th:value="${{reminder.time}}" required>
+            </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+    </div>
 
 
 
