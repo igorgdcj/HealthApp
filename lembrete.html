@@ -29,18 +29,121 @@
         </ul>
       </nav>
       <a href="index.html" class="logo">Health App</a>
-      <a href="usuario.html"><img class="" src="/img/perfil.png" alt="" width="25px" height="25px"></a>
+      <a href="login.html"><img class="" src="/img/perfil.png" alt="" width="25px" height="25px"></a>
     </header>
     <div class="header_search">
       <img src="/img/search0.png" alt="">
       <input id="search-input" type="text" maxlength="800" autocorrect="off" autocapitalize="off" apellcheck="false" placeholder="Pesquisar" />
   </div>
 
-  <!--<div class="sidebar">
-  </div>
-  <main>
-    <div class="main-container"></div>
-  </main>-->
+
+
+
+
+  <div class="contentlist">
+    <form method="POST" action="/create" th:object="${reminder}">
+        <input type="hidden" th:value="${reminder.id}" name="id" />
+        <div class="mb-3">
+          <label class="form-label">Nome do medicamento: Cefalexina</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Horário do lembrete: 07h00</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><a href="#">Acessar bula</a></label>
+        </div>
+    </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Oxicodona</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 21h00</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Amoxicilina</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 09h00</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Azitromicina</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 14h00</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Escitalopram</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 12h00</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Alprazolam</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 18h00</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
+
+<div class="contentlist">
+  <form method="POST" action="/create" th:object="${reminder}">
+      <input type="hidden" th:value="${reminder.id}" name="id" />
+      <div class="mb-3">
+        <label class="form-label">Nome do medicamento: Bromoprida</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Horário do lembrete: 10h30</label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><a href="#">Acessar bula</a></label>
+      </div>
+  </form>
+</div>
 
 
 

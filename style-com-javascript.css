@@ -92,6 +92,7 @@ a {
     padding: 1rem 0;
     cursor: pointer;
   }
+
   .hamburger {
     border-top: 0.125rem solid;
     width: 1.25rem;
@@ -213,6 +214,39 @@ button[type="submit"]:hover{
 }
 
 
+.contentlist {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+  width: 96%;
+  margin-top: 5%;
+  background-color: #f5f5f5;
+  border: solid 1px #3b3b3b;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 30%;
+  overflow: auto;
+}
+
+.contentlg {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 10%;
+  background-color: #f5f5f5;
+  border: solid 1px #3b3b3b;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 30%;
+  overflow: auto;
+}
+
+h1 {
+  margin: 3px;
+  text-align: center;
+}
+
 
 
 
@@ -223,6 +257,7 @@ button[type="submit"]:hover{
 /*RODAPE*/
 
 .menu-rodape {
+  background-color: #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
